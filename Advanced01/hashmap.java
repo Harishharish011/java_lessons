@@ -8,7 +8,16 @@ public class hashmap {
         Details.put("Gender","Male");   
         Details.put("Name","Arun");
         Details.put("Name","vibin"); //First duplicate value will be replaced by the last duplicate value
+        /*
         System.out.println(Details);
-        System.out.println(Details.get("Gender"));
+        System.out.println(Details.get(Details.containsKey("Name")));*/
+
+        // for ( int i: Details)
+        for (Map.Entry<String, String> Detail : Details.entrySet()) {
+            String key = Detail.getKey();
+            String value = Detail.getValue();
+
+            System.out.println(key + " : " + value);
+        }
     }
 }
