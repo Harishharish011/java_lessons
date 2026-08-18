@@ -6,6 +6,8 @@ public class stringexample {
         String first_four = "HEXA";
         String lower_name = name.toLowerCase();
 
+        String spaceCorrection = "Hy! How are you?";
+
         String compare = "JAVAPROGRAMMING!";
 
          System.out.println(name);
@@ -31,5 +33,9 @@ public class stringexample {
 
          //length: used to findout the length of the string.
          System.out.println("length of the string: "+ compare.length());
+
+         //removing the spaces btw using the replace method.
+         System.out.println( "After removing the space: "+ spaceCorrection.replace(" ",""));
+
     }
 }
